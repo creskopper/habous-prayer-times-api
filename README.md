@@ -27,7 +27,7 @@ Feel free to explore and use these endpoints to fetch information about availabl
 -   **Description:** This endpoints retrieves a list of available cities on the Habous gov website
 -   **Method:** `GET`
 -   **Endpoint URL:** `/api/v1/available-cities`
--   **Example Response:** https://habous-prayer-times-api.onrender.com/api/v1/available-cities
+-   **Example Request:** https://habous-prayer-times-api.onrender.com/api/v1/available-cities
 -   **Example Response:**
 
     ```JSON
@@ -69,7 +69,7 @@ Feel free to explore and use these endpoints to fetch information about availabl
 -   **Description:** This endpoint retrieves prayer times of the current Hijri month for a specific city using the city's ID. If you don't know the ID for a specific city you can use the [/available-cities](#1-available-cities) route to retreive all the cities available
 -   **Method:** `GET`
 -   **Endpoint URL:** `/api/v1/prayer-times?cityId={cityId}`
--   **Example Response:** https://habous-prayer-times-api.onrender.com/api/v1/prayer-times?cityId=109
+-   **Example Request:** https://habous-prayer-times-api.onrender.com/api/v1/prayer-times?cityId=109
 -   **Example Response:**
 
     ```JSON
