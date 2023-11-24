@@ -1,29 +1,32 @@
 import express from "express";
 import { addDays, format, getYear } from "date-fns";
 
-import extractCityName from "../lib/extractCityName.js";
 import extractPrayerTableData from "../lib/extractPrayerTableData.js";
 import extractMonthsFromTableData from "../lib/extractMonthsFromTableData.js";
+import extractCities from "../lib/extractCities.js";
 
 const PrayerTimesRoute = express.Router();
 
 PrayerTimesRoute.get("/prayer-times", async (req, res) => {
 	const { cityId = 1 } = req.query;
 
+	const availableCities = await extractCities();
+	const [foundCity] = availableCities.filter((city) => city.id === cityId);
+
+	if (!foundCity) {
+		return res.status(404).send({
+			message: "This city id does not exist in Habous gov website",
+		});
+	}
+
 	try {
-		const [{ cityNameInArabic, cityNameInFrensh }, prayers] =
-			await Promise.all([
-				extractCityName({
-					cityId,
-				}),
-				getPrayers({ cityId }),
-			]);
+		const prayers = await getPrayers({ cityId });
 
 		res.status(200).send({
 			data: {
 				city: {
-					ar: cityNameInArabic,
-					fr: cityNameInFrensh,
+					ar: foundCity.arabicCityName,
+					fr: foundCity.frenshCityName,
 				},
 				timings: prayers,
 			},
