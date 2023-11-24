@@ -1,6 +1,6 @@
 # Habous Prayer Times API (unofficial)
 
-This API provides access to prayer times and information about available cities from the [Habous.gov.ma](https://habous.gov.ma/) website. Please note that this API is unofficial and is not affiliated with or endorsed by the official "Ministry of Habous and Islamic Affairs".
+This API provides access to API Morocco's prayer times and information about available cities from the [Habous.gov.ma](https://habous.gov.ma/) website. Please note that this API is unofficial and is not affiliated with or endorsed by the official "Ministry of Habous and Islamic Affairs".
 
 ## Overview
 
@@ -8,7 +8,7 @@ This API is built using **Node.js** and **Express.js** for handling HTTP request
 
 ## Live API
 
-This API is live and hosted on [render.com](https://render.com/).
+This API is live and hosted on `render.com`
 
 You can access the API endpoints:
 
