@@ -8,9 +8,9 @@ This API is built using **Node.js** and **Express.js** for handling HTTP request
 
 ## Live API
 
-This API is live and hosted on `render.com` for free.
+For more information visit: **[habous-prayer-times-api.onrender.com](https://habous-prayer-times-api.onrender.com/)**
 
--   **Note:** Render spins down a Free web service that goes 15 minutes without receiving inbound traffic. Render spins the service back up whenever it next receives a request to process. Spinning up a service takes a few seconds, which causes a noticeable delay for incoming requests until the service is back up and running.
+**Please note:** This API is hosted on render.com's free tier. Render occasionally spins down free web services that go 15 minutes without receiving inbound traffic. When a request is made, Render resumes the service, causing a brief delay before the API is back up and running. Users may experience this slight delay due to service reactivation.
 
 You can access the API endpoints:
 
