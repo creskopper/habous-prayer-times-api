@@ -1,19 +1,17 @@
 import express, { json } from "express";
+import path from "path";
 
 import AvailableCitiesRoute from "./routes/available-cities.js";
 import PrayerTimesRoute from "./routes/prayer-times.js";
 
 const app = express();
 
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
 app.use(json());
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/api/v1/", AvailableCitiesRoute);
 app.use("/api/v1/", PrayerTimesRoute);
-
-app.get("/", (req, res) => {
-	res.send({
-		message: "ok",
-	});
-});
 
 export default app;
