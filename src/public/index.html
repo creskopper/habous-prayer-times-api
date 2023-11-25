@@ -16,6 +16,17 @@
 			and Islamic Affairs."
 		</p>
 
+		<p>
+			<em
+				><strong>Please note:</strong> This API is hosted on
+				render.com's free tier. Render occasionally spins down free web
+				services that go 15 minutes without receiving inbound traffic.
+				When a request is made, Render resumes the service, causing a
+				brief delay before the API is back up and running. Users may
+				experience this slight delay due to service reactivation.</em
+			>
+		</p>
+
 		<h2>Endpoints</h2>
 
 		<div class="endpoint">
@@ -24,11 +35,38 @@
 				This endpoints retrieves a list of available cities on the
 				Habous gov website
 			</p>
-			<p class="endpoint-code">GET &nbsp;/api/v1/available-cities</p>
-			<p>
-				This endpoint returns a JSON array containing the available
-				cities along with their Arabic and French names.
-			</p>
+			<h4>Endpoint</h4>
+			<div class="endpoint-code">
+				<pre>
+GET https://habous-prayer-times-api.onrender.com/api/v1/available-cities</pre
+				>
+			</div>
+			<h4>Response</h4>
+			<div class="endpoint-code">
+				<pre>
+{
+  "cities": [
+    {
+      "id": "1",
+      "arabicCityName": "الرباط",
+      "frenshCityName": "Rabat"
+    },
+    {
+      "id": "2",
+      "arabicCityName": "الخميسات",
+      "frenshCityName": "Khémissat"
+    },
+    {
+      "id": "3",
+      "arabicCityName": "تيفلت",
+      "frenshCityName": "Tiflet"
+    },
+
+    // More available cities, there are 191 cities in total
+  ]
+}</pre
+				>
+			</div>
 		</div>
 
 		<div class="endpoint">
@@ -39,20 +77,62 @@
 				ID for a specific city you can use the available-cities endpoint
 				to retreive all the cities available
 			</p>
-			<p class="endpoint-code">
-				GET &nbsp;/api/v1/prayer-times?cityId={cityId}
-			</p>
+			<h4>Endpoint</h4>
+			<div class="endpoint-code">
+				<pre>
+GET https://habous-prayer-times-api.onrender.com/api/v1/prayer-times?cityId={cityId}</pre
+				>
+			</div>
 			<p>
 				Replace <code>{cityId}</code> with the ID of the desired city.
 			</p>
-		</div>
+			<h4>Example Request</h4>
+			<div class="endpoint-code">
+				<pre>
+GET https://habous-prayer-times-api.onrender.com/api/v1/prayer-times?cityId=109</pre
+				>
+			</div>
+			<h4>Example Response</h4>
+			<div class="endpoint-code">
+				<pre>
+{
+  "data": {
+      "city": {
+      "ar": "الرحامنة",
+      "fr": "Rehamna"
+    },
+    "timings": [
+      {
+        "date": {
+          "readable": "15 Nov 2023",
+          "formatedDate": "15-nov-2023",
+          "gregorian": {
+            "day": 15,
+            "month": "November",
+            "year": 2023
+          },
+          "hijri": {
+            "day": 1,
+            "month": "جمادى الأولى",
+            "year": 1445
+          }
+        },
+        "prayers": {
+          "fajr": "06:31",
+          "sunrise": "07:55",
+          "dhuhr": "13:21",
+          "asr": "16:11",
+          "maghrib": "18:38",
+          "ishaa": "19:51"
+        }
+      },
 
-		<h2>Usage</h2>
-		<p>
-			To use the API, make HTTP requests to the provided endpoints. For
-			example:
-		</p>
-		<pre><code>GET /api/v1/available-cities</code></pre>
-		<pre><code>GET /api/v1/prayer-times?cityId={cityId}</code></pre>
+      // More prayer time objects for subsequent dates
+    ]
+  }
+}</pre
+				>
+			</div>
+		</div>
 	</body>
 </html>

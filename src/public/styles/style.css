@@ -13,12 +13,25 @@ p {
     line-height: 1.6;
 }
 
+pre {
+    line-height: 1.6;
+    display: block;
+    font-size: 14px;
+    text-wrap: wrap;
+}
+
+code {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
 .endpoint {
     margin-bottom: 10px;
 }
 
 .endpoint-code {
     background-color: #f3f6f9;
-    padding: 8px 14px;
+    padding: 0 14px;
     border-radius: 6px;
+    border: 1px solid #cccccc;
 }
