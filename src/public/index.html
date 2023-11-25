@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<title>Habous Prayer Times API</title>
+	</head>
+
+	<body>
+		<h1>Welcome to Habous Prayer Times API</h1>
+		<p>
+			This API provides access to Morocco's prayer times and information
+			about available cities from the Habous government website. It is
+			unofficial and not affiliated with the official "Ministry of Habous
+			and Islamic Affairs."
+		</p>
+
+		<h2>Endpoints</h2>
+
+		<div class="endpoint">
+			<h3>1. Available Cities</h3>
+			<p>
+				This endpoints retrieves a list of available cities on the
+				Habous gov website
+			</p>
+			<p class="endpoint-code">GET &nbsp;/api/v1/available-cities</p>
+			<p>
+				This endpoint returns a JSON array containing the available
+				cities along with their Arabic and French names.
+			</p>
+		</div>
+
+		<div class="endpoint">
+			<h3>2. Prayer Times</h3>
+			<p>
+				This endpoint retrieves prayer times of the current Hijri month
+				for a specific city using the city's ID. If you don't know the
+				ID for a specific city you can use the available-cities endpoint
+				to retreive all the cities available
+			</p>
+			<p class="endpoint-code">
+				GET &nbsp;/api/v1/prayer-times?cityId={cityId}
+			</p>
+			<p>
+				Replace <code>{cityId}</code> with the ID of the desired city.
+			</p>
+		</div>
+
+		<h2>Usage</h2>
+		<p>
+			To use the API, make HTTP requests to the provided endpoints. For
+			example:
+		</p>
+		<pre><code>GET /api/v1/available-cities</code></pre>
+		<pre><code>GET /api/v1/prayer-times?cityId={cityId}</code></pre>
+	</body>
+</html>
