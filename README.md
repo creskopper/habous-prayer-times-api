@@ -8,7 +8,9 @@ This API is built using **Node.js** and **Express.js** for handling HTTP request
 
 ## Live API
 
-This API is live and hosted on `render.com`
+This API is live and hosted on `render.com` for free.
+
+-   **Note:** Render spins down a Free web service that goes 15 minutes without receiving inbound traffic. Render spins the service back up whenever it next receives a request to process. Spinning up a service takes a few seconds, which causes a noticeable delay for incoming requests until the service is back up and running.
 
 You can access the API endpoints:
 
