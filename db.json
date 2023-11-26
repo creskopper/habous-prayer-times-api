@@ -1,0 +1,958 @@
+{
+  "cities": [
+    {
+      "id": "1",
+      "arabicCityName": "الرباط",
+      "frenshCityName": "Rabat"
+    },
+    {
+      "id": "2",
+      "arabicCityName": "الخميسات",
+      "frenshCityName": "Khémissat"
+    },
+    {
+      "id": "3",
+      "arabicCityName": "تيفلت",
+      "frenshCityName": "Tiflet"
+    },
+    {
+      "id": "4",
+      "arabicCityName": "الرماني",
+      "frenshCityName": "Remani"
+    },
+    {
+      "id": "5",
+      "arabicCityName": "والماس",
+      "frenshCityName": "Oualmas"
+    },
+    {
+      "id": "6",
+      "arabicCityName": "بوزنيقة",
+      "frenshCityName": "Bouznika"
+    },
+    {
+      "id": "7",
+      "arabicCityName": "القنيطرة",
+      "frenshCityName": "Kénitra"
+    },
+    {
+      "id": "8",
+      "arabicCityName": "سيدي قاسم",
+      "frenshCityName": "Sidi Kacem"
+    },
+    {
+      "id": "9",
+      "arabicCityName": "سيدي يحيى الغرب",
+      "frenshCityName": "Sidi yahya lgharb"
+    },
+    {
+      "id": "10",
+      "arabicCityName": "سيدي سليمان",
+      "frenshCityName": "Sidi Slimane"
+    },
+    {
+      "id": "11",
+      "arabicCityName": "سوق أربعاء الغرب",
+      "frenshCityName": "Souk arbiaa lgharb"
+    },
+    {
+      "id": "12",
+      "arabicCityName": "عرباوة",
+      "frenshCityName": "Arbaoua"
+    },
+    {
+      "id": "13",
+      "arabicCityName": "مولاي بوسلهام",
+      "frenshCityName": "Mmoulay Bouselham"
+    },
+    {
+      "id": "14",
+      "arabicCityName": "طنجة",
+      "frenshCityName": "Tanger"
+    },
+    {
+      "id": "15",
+      "arabicCityName": "تطوان",
+      "frenshCityName": "Tetouan"
+    },
+    {
+      "id": "16",
+      "arabicCityName": "العرائش",
+      "frenshCityName": "Araich"
+    },
+    {
+      "id": "17",
+      "arabicCityName": "أصيلة",
+      "frenshCityName": "Assila"
+    },
+    {
+      "id": "18",
+      "arabicCityName": "شفشاون",
+      "frenshCityName": "Chefchaoun"
+    },
+    {
+      "id": "19",
+      "arabicCityName": "مرتيل",
+      "frenshCityName": "Martil"
+    },
+    {
+      "id": "20",
+      "arabicCityName": "المضيق",
+      "frenshCityName": "M'Diq"
+    },
+    {
+      "id": "21",
+      "arabicCityName": "القصر الكبير",
+      "frenshCityName": "Laksar Lakbire"
+    },
+    {
+      "id": "22",
+      "arabicCityName": "القصر الصغير",
+      "frenshCityName": "Laksar Sghir"
+    },
+    {
+      "id": "23",
+      "arabicCityName": "الحسيمة",
+      "frenshCityName": "Alhoceima"
+    },
+    {
+      "id": "24",
+      "arabicCityName": "سبتة",
+      "frenshCityName": "Sebta"
+    },
+    {
+      "id": "25",
+      "arabicCityName": "الفنيدق",
+      "frenshCityName": "Fnideq"
+    },
+    {
+      "id": "26",
+      "arabicCityName": "الجبهة",
+      "frenshCityName": "Jebha"
+    },
+    {
+      "id": "27",
+      "arabicCityName": "واد لاو",
+      "frenshCityName": "Oued laou"
+    },
+    {
+      "id": "28",
+      "arabicCityName": "باب برد",
+      "frenshCityName": "Bab berred"
+    },
+    {
+      "id": "29",
+      "arabicCityName": "وزان",
+      "frenshCityName": "Ouazzan"
+    },
+    {
+      "id": "30",
+      "arabicCityName": "بوسكور",
+      "frenshCityName": "Bouskoura"
+    },
+    {
+      "id": "31",
+      "arabicCityName": "وجدة",
+      "frenshCityName": "Oujda"
+    },
+    {
+      "id": "32",
+      "arabicCityName": "بركان",
+      "frenshCityName": "Berkane"
+    },
+    {
+      "id": "33",
+      "arabicCityName": "فكيك",
+      "frenshCityName": "Feguig"
+    },
+    {
+      "id": "34",
+      "arabicCityName": "بوعرفة",
+      "frenshCityName": "Bouâarfa"
+    },
+    {
+      "id": "35",
+      "arabicCityName": "كرسيف",
+      "frenshCityName": "Guersif"
+    },
+    {
+      "id": "36",
+      "arabicCityName": "جرادة",
+      "frenshCityName": "Jrada"
+    },
+    {
+      "id": "37",
+      "arabicCityName": "عين الشعير",
+      "frenshCityName": "Ain châir"
+    },
+    {
+      "id": "38",
+      "arabicCityName": "تاوريرت",
+      "frenshCityName": "Taourirt"
+    },
+    {
+      "id": "39",
+      "arabicCityName": "الناظور",
+      "frenshCityName": "Nador"
+    },
+    {
+      "id": "40",
+      "arabicCityName": "مليلية",
+      "frenshCityName": "Melilla"
+    },
+    {
+      "id": "41",
+      "arabicCityName": "دبدو",
+      "frenshCityName": "Debdou"
+    },
+    {
+      "id": "42",
+      "arabicCityName": "سلوان",
+      "frenshCityName": "Selouane"
+    },
+    {
+      "id": "43",
+      "arabicCityName": "بني أنصار",
+      "frenshCityName": "Beni Ensar"
+    },
+    {
+      "id": "44",
+      "arabicCityName": "فرخانة",
+      "frenshCityName": "Ferkhana"
+    },
+    {
+      "id": "45",
+      "arabicCityName": "تالسينت",
+      "frenshCityName": "Talsinet"
+    },
+    {
+      "id": "46",
+      "arabicCityName": "تندرارة",
+      "frenshCityName": "Tindrara"
+    },
+    {
+      "id": "47",
+      "arabicCityName": "العيون الشرقية",
+      "frenshCityName": "El Aïoun Charqiya"
+    },
+    {
+      "id": "48",
+      "arabicCityName": "بني ادرار",
+      "frenshCityName": "Bni Drar"
+    },
+    {
+      "id": "49",
+      "arabicCityName": "السعيدية",
+      "frenshCityName": "Saïdia"
+    },
+    {
+      "id": "50",
+      "arabicCityName": "رأس الماء",
+      "frenshCityName": "Ras Lma"
+    },
+    {
+      "id": "51",
+      "arabicCityName": "تافوغالت",
+      "frenshCityName": "Tafoughalt"
+    },
+    {
+      "id": "52",
+      "arabicCityName": "فزوان",
+      "frenshCityName": "Fezouane"
+    },
+    {
+      "id": "53",
+      "arabicCityName": "أحفير",
+      "frenshCityName": "Ahfir"
+    },
+    {
+      "id": "54",
+      "arabicCityName": "زايو",
+      "frenshCityName": "Zaio"
+    },
+    {
+      "id": "55",
+      "arabicCityName": "دريوش",
+      "frenshCityName": "Driouech"
+    },
+    {
+      "id": "56",
+      "arabicCityName": "بني تجيت",
+      "frenshCityName": "Beni Tejit"
+    },
+    {
+      "id": "57",
+      "arabicCityName": "بوعنان",
+      "frenshCityName": "Bouanane"
+    },
+    {
+      "id": "58",
+      "arabicCityName": "الدار البيضاء",
+      "frenshCityName": "Casablanca"
+    },
+    {
+      "id": "59",
+      "arabicCityName": "المحمدية",
+      "frenshCityName": "Mohammadia"
+    },
+    {
+      "id": "60",
+      "arabicCityName": "بن سليمان",
+      "frenshCityName": "Benslimane"
+    },
+    {
+      "id": "61",
+      "arabicCityName": "سطات",
+      "frenshCityName": "Settat"
+    },
+    {
+      "id": "62",
+      "arabicCityName": "الكارة",
+      "frenshCityName": "Lgara"
+    },
+    {
+      "id": "63",
+      "arabicCityName": "البروج",
+      "frenshCityName": "El Borouj"
+    },
+    {
+      "id": "64",
+      "arabicCityName": "ابن أحمد",
+      "frenshCityName": "Beni Ahmed"
+    },
+    {
+      "id": "65",
+      "arabicCityName": "برشيد",
+      "frenshCityName": "Berrchid"
+    },
+    {
+      "id": "66",
+      "arabicCityName": "الجديدة",
+      "frenshCityName": "Eljadida"
+    },
+    {
+      "id": "67",
+      "arabicCityName": "أزمور",
+      "frenshCityName": "Azemour"
+    },
+    {
+      "id": "68",
+      "arabicCityName": "سيدي بنور",
+      "frenshCityName": "Sidi Bennour"
+    },
+    {
+      "id": "69",
+      "arabicCityName": "خميس الزمامرة",
+      "frenshCityName": "Zemamra"
+    },
+    {
+      "id": "70",
+      "arabicCityName": "خنيفرة",
+      "frenshCityName": "Khénifra"
+    },
+    {
+      "id": "71",
+      "arabicCityName": "مولاي بوعزة",
+      "frenshCityName": "Moulay Bouâaza"
+    },
+    {
+      "id": "72",
+      "arabicCityName": "زاوية أحنصال",
+      "frenshCityName": "Zaouiat Ahensal"
+    },
+    {
+      "id": "73",
+      "arabicCityName": "بني ملال",
+      "frenshCityName": "Beni Mellal"
+    },
+    {
+      "id": "74",
+      "arabicCityName": "أزيلال",
+      "frenshCityName": "Azilal"
+    },
+    {
+      "id": "75",
+      "arabicCityName": "الفقيه بنصالح",
+      "frenshCityName": "Fquih Ben Salah"
+    },
+    {
+      "id": "76",
+      "arabicCityName": "دمنات",
+      "frenshCityName": "Demnat"
+    },
+    {
+      "id": "77",
+      "arabicCityName": "القصيبة",
+      "frenshCityName": "El Ksiba"
+    },
+    {
+      "id": "78",
+      "arabicCityName": "قصبة تادلة",
+      "frenshCityName": "Kasba Tadla"
+    },
+    {
+      "id": "79",
+      "arabicCityName": "خريبكة",
+      "frenshCityName": "Khouribga"
+    },
+    {
+      "id": "80",
+      "arabicCityName": "وادي زم",
+      "frenshCityName": "Oued Zem"
+    },
+    {
+      "id": "81",
+      "arabicCityName": "فاس",
+      "frenshCityName": "Fes"
+    },
+    {
+      "id": "82",
+      "arabicCityName": "صفرو",
+      "frenshCityName": "Sefrou"
+    },
+    {
+      "id": "83",
+      "arabicCityName": "مولاي يعقوب",
+      "frenshCityName": "Moulay Yaâgoub"
+    },
+    {
+      "id": "84",
+      "arabicCityName": "بولمان",
+      "frenshCityName": "Boulmane"
+    },
+    {
+      "id": "85",
+      "arabicCityName": "ميسور",
+      "frenshCityName": "Missour"
+    },
+    {
+      "id": "86",
+      "arabicCityName": "رباط الخير",
+      "frenshCityName": "Ribate El Kheïr"
+    },
+    {
+      "id": "87",
+      "arabicCityName": "المنزل بني يازغة",
+      "frenshCityName": "El Menzel"
+    },
+    {
+      "id": "88",
+      "arabicCityName": "إموزار كندر",
+      "frenshCityName": "Imouzar Kandar"
+    },
+    {
+      "id": "89",
+      "arabicCityName": "تازة",
+      "frenshCityName": "Taza"
+    },
+    {
+      "id": "90",
+      "arabicCityName": "تاونات",
+      "frenshCityName": "Taounat"
+    },
+    {
+      "id": "91",
+      "arabicCityName": "أكنول",
+      "frenshCityName": "Aknoul"
+    },
+    {
+      "id": "92",
+      "arabicCityName": "تيزي وسلي",
+      "frenshCityName": "Tizi ousli"
+    },
+    {
+      "id": "93",
+      "arabicCityName": "بورد",
+      "frenshCityName": "Bourd"
+    },
+    {
+      "id": "94",
+      "arabicCityName": "تاهلة",
+      "frenshCityName": "Tahla"
+    },
+    {
+      "id": "95",
+      "arabicCityName": "تيسة",
+      "frenshCityName": "Tissa"
+    },
+    {
+      "id": "96",
+      "arabicCityName": "قرية با محمد",
+      "frenshCityName": "Karia Ba Mohamed"
+    },
+    {
+      "id": "97",
+      "arabicCityName": "كتامة",
+      "frenshCityName": "Ketama"
+    },
+    {
+      "id": "98",
+      "arabicCityName": "واد أمليل",
+      "frenshCityName": "Oued Amlil"
+    },
+    {
+      "id": "99",
+      "arabicCityName": "مكناس",
+      "frenshCityName": "Meknes"
+    },
+    {
+      "id": "100",
+      "arabicCityName": "يفرن",
+      "frenshCityName": "Ifrane"
+    },
+    {
+      "id": "101",
+      "arabicCityName": "الحاجب",
+      "frenshCityName": "El Hajeb"
+    },
+    {
+      "id": "102",
+      "arabicCityName": "زرهون",
+      "frenshCityName": "Zerhoun"
+    },
+    {
+      "id": "103",
+      "arabicCityName": "آزرو",
+      "frenshCityName": "Azrou"
+    },
+    {
+      "id": "104",
+      "arabicCityName": "مراكش",
+      "frenshCityName": "Merrakech"
+    },
+    {
+      "id": "105",
+      "arabicCityName": "قلعة السراغنة",
+      "frenshCityName": "Kelâat Esraghna"
+    },
+    {
+      "id": "106",
+      "arabicCityName": "الصويرة",
+      "frenshCityName": "Essaouira"
+    },
+    {
+      "id": "107",
+      "arabicCityName": "شيشاوة",
+      "frenshCityName": "Chichaoua"
+    },
+    {
+      "id": "108",
+      "arabicCityName": "بنجرير",
+      "frenshCityName": "Bengrire"
+    },
+    {
+      "id": "109",
+      "arabicCityName": "الرحامنة",
+      "frenshCityName": "Rehamna"
+    },
+    {
+      "id": "110",
+      "arabicCityName": "تمنار",
+      "frenshCityName": "Tamanar"
+    },
+    {
+      "id": "111",
+      "arabicCityName": "آسفي",
+      "frenshCityName": "Safi"
+    },
+    {
+      "id": "112",
+      "arabicCityName": "الوليدية",
+      "frenshCityName": "Oualidia"
+    },
+    {
+      "id": "113",
+      "arabicCityName": "اليوسفية",
+      "frenshCityName": "Youssoufia"
+    },
+    {
+      "id": "114",
+      "arabicCityName": "تسلطانت",
+      "frenshCityName": "Tassoultante"
+    },
+    {
+      "id": "115",
+      "arabicCityName": "تامصلوحت",
+      "frenshCityName": "Tamesluht"
+    },
+    {
+      "id": "116",
+      "arabicCityName": "قطارة",
+      "frenshCityName": "Kettara"
+    },
+    {
+      "id": "117",
+      "arabicCityName": "أكادير",
+      "frenshCityName": "Agadir"
+    },
+    {
+      "id": "118",
+      "arabicCityName": "تارودانت",
+      "frenshCityName": "Taroudant"
+    },
+    {
+      "id": "119",
+      "arabicCityName": "تزنيت",
+      "frenshCityName": "Tiznit"
+    },
+    {
+      "id": "120",
+      "arabicCityName": "إغرم",
+      "frenshCityName": "Irherm"
+    },
+    {
+      "id": "121",
+      "arabicCityName": "تالوين",
+      "frenshCityName": "Taliouine"
+    },
+    {
+      "id": "122",
+      "arabicCityName": "تافراوت",
+      "frenshCityName": "Tafraoute"
+    },
+    {
+      "id": "123",
+      "arabicCityName": "طاطا",
+      "frenshCityName": "Tata"
+    },
+    {
+      "id": "124",
+      "arabicCityName": "أقا",
+      "frenshCityName": "Akka"
+    },
+    {
+      "id": "125",
+      "arabicCityName": "فم لحصن",
+      "frenshCityName": "Fam El Hisn"
+    },
+    {
+      "id": "126",
+      "arabicCityName": "بويكرة",
+      "frenshCityName": "Biougra"
+    },
+    {
+      "id": "127",
+      "arabicCityName": "أولاد تايمة",
+      "frenshCityName": "Oulad Teima"
+    },
+    {
+      "id": "128",
+      "arabicCityName": "الرشيدية",
+      "frenshCityName": "Errachidia"
+    },
+    {
+      "id": "129",
+      "arabicCityName": "الريصاني",
+      "frenshCityName": "Rissani"
+    },
+    {
+      "id": "130",
+      "arabicCityName": "أرفود",
+      "frenshCityName": "Arfoud"
+    },
+    {
+      "id": "131",
+      "arabicCityName": "تنديت",
+      "frenshCityName": "Tandit"
+    },
+    {
+      "id": "132",
+      "arabicCityName": "كلميمة",
+      "frenshCityName": "Goulmima"
+    },
+    {
+      "id": "133",
+      "arabicCityName": "إملشيل",
+      "frenshCityName": "Imilchil"
+    },
+    {
+      "id": "134",
+      "arabicCityName": "تنجداد",
+      "frenshCityName": "Tinejdad"
+    },
+    {
+      "id": "135",
+      "arabicCityName": "الريش",
+      "frenshCityName": "Er-Rich"
+    },
+    {
+      "id": "136",
+      "arabicCityName": "ميدلت",
+      "frenshCityName": "Midelt"
+    },
+    {
+      "id": "137",
+      "arabicCityName": "زاكورة",
+      "frenshCityName": "Zagora"
+    },
+    {
+      "id": "138",
+      "arabicCityName": "ورزازات",
+      "frenshCityName": "Ouarzazate"
+    },
+    {
+      "id": "139",
+      "arabicCityName": "تنغير",
+      "frenshCityName": "Tinghir"
+    },
+    {
+      "id": "140",
+      "arabicCityName": "هسكورة",
+      "frenshCityName": "Haskora"
+    },
+    {
+      "id": "141",
+      "arabicCityName": "قلعة مكونة",
+      "frenshCityName": "Kalaat M'Gouna"
+    },
+    {
+      "id": "142",
+      "arabicCityName": "أكدز",
+      "frenshCityName": "Agdz"
+    },
+    {
+      "id": "143",
+      "arabicCityName": "بومالن دادس",
+      "frenshCityName": "Boumalne Dades"
+    },
+    {
+      "id": "144",
+      "arabicCityName": "النيف",
+      "frenshCityName": "Alnif"
+    },
+    {
+      "id": "145",
+      "arabicCityName": "أسول",
+      "frenshCityName": "Assoul"
+    },
+    {
+      "id": "146",
+      "arabicCityName": "أمسمرير",
+      "frenshCityName": "Msemrir"
+    },
+    {
+      "id": "147",
+      "arabicCityName": "تازارين",
+      "frenshCityName": "Tazarine"
+    },
+    {
+      "id": "148",
+      "arabicCityName": "سيدي إفني",
+      "frenshCityName": "Sidi Ifni"
+    },
+    {
+      "id": "149",
+      "arabicCityName": "كلميم",
+      "frenshCityName": "Guelmim"
+    },
+    {
+      "id": "150",
+      "arabicCityName": "أسا",
+      "frenshCityName": "Assa"
+    },
+    {
+      "id": "151",
+      "arabicCityName": "الزاك",
+      "frenshCityName": "Zag"
+    },
+    {
+      "id": "152",
+      "arabicCityName": "طانطان",
+      "frenshCityName": "Tantan"
+    },
+    {
+      "id": "153",
+      "arabicCityName": "بويزكارن",
+      "frenshCityName": "Bouizakarne"
+    },
+    {
+      "id": "154",
+      "arabicCityName": "المحبس",
+      "frenshCityName": "Al Mahbes"
+    },
+    {
+      "id": "155",
+      "arabicCityName": "لمسيد",
+      "frenshCityName": "Lamsid"
+    },
+    {
+      "id": "156",
+      "arabicCityName": "العيون",
+      "frenshCityName": "Laayoune"
+    },
+    {
+      "id": "157",
+      "arabicCityName": "السمارة",
+      "frenshCityName": "Samara"
+    },
+    {
+      "id": "158",
+      "arabicCityName": "بوجدور",
+      "frenshCityName": "Boujdour"
+    },
+    {
+      "id": "159",
+      "arabicCityName": "طرفاية",
+      "frenshCityName": "Tarfaia"
+    },
+    {
+      "id": "160",
+      "arabicCityName": "تفاريتي",
+      "frenshCityName": "Tifariti"
+    },
+    {
+      "id": "161",
+      "arabicCityName": "بوكراع",
+      "frenshCityName": "Bu Craa"
+    },
+    {
+      "id": "162",
+      "arabicCityName": "كلتة زمور",
+      "frenshCityName": "Guelta Zemmur"
+    },
+    {
+      "id": "163",
+      "arabicCityName": "أمكالة",
+      "frenshCityName": "Amgala"
+    },
+    {
+      "id": "164",
+      "arabicCityName": "أخفنير",
+      "frenshCityName": "Akhfennir"
+    },
+    {
+      "id": "165",
+      "arabicCityName": "الداخلة",
+      "frenshCityName": "Dakhla"
+    },
+    {
+      "id": "166",
+      "arabicCityName": "الكويرة",
+      "frenshCityName": "Lagouira"
+    },
+    {
+      "id": "167",
+      "arabicCityName": "أوسرد",
+      "frenshCityName": "Awsard"
+    },
+    {
+      "id": "168",
+      "arabicCityName": "بئر كندوز",
+      "frenshCityName": "Bir Gandus"
+    },
+    {
+      "id": "169",
+      "arabicCityName": "بئر أنزاران",
+      "frenshCityName": "Bir Anzerane"
+    },
+    {
+      "id": "301",
+      "arabicCityName": "خميس سيدي عبد الجليل",
+      "frenshCityName": "Khmiss Sidi Abdeljalil"
+    },
+    {
+      "id": "302",
+      "arabicCityName": "أولاد عياد",
+      "frenshCityName": "Oulad Ayad"
+    },
+    {
+      "id": "303",
+      "arabicCityName": "تاهلة",
+      "frenshCityName": "Tahla"
+    },
+    {
+      "id": "304",
+      "arabicCityName": "مطماطة",
+      "frenshCityName": "Matmata"
+    },
+    {
+      "id": "305",
+      "arabicCityName": "إيمنتانوت",
+      "frenshCityName": "Imintanoute"
+    },
+    {
+      "id": "306",
+      "arabicCityName": "سيدي غانم",
+      "frenshCityName": "Sidi Ghanem"
+    },
+    {
+      "id": "307",
+      "arabicCityName": "تفنتان",
+      "frenshCityName": "Tifntan"
+    },
+    {
+      "id": "308",
+      "arabicCityName": "آيت القاق",
+      "frenshCityName": "Ait Aque"
+    },
+    {
+      "id": "309",
+      "arabicCityName": "أكدال أملشيل",
+      "frenshCityName": "Agdal Imilchil"
+    },
+    {
+      "id": "310",
+      "arabicCityName": "اكودال املشيل ميدلت",
+      "frenshCityName": "Agoudal"
+    },
+    {
+      "id": "311",
+      "arabicCityName": "أكايوار",
+      "frenshCityName": "Akaywar"
+    },
+    {
+      "id": "312",
+      "arabicCityName": "عين العودة",
+      "frenshCityName": "Aïn El Aouda"
+    },
+    {
+      "id": "313",
+      "arabicCityName": "أسكين",
+      "frenshCityName": "Asguin"
+    },
+    {
+      "id": "314",
+      "arabicCityName": "آيت ورير",
+      "frenshCityName": "Ait Ourir"
+    },
+    {
+      "id": "315",
+      "arabicCityName": "زاوية مولاي ابراهيم",
+      "frenshCityName": "Zaouyat My Brahim"
+    },
+    {
+      "id": "316",
+      "arabicCityName": "تولكولت",
+      "frenshCityName": "Toulkoult"
+    },
+    {
+      "id": "317",
+      "arabicCityName": "إيكس",
+      "frenshCityName": "Iguisse"
+    },
+    {
+      "id": "318",
+      "arabicCityName": "كرس",
+      "frenshCityName": "Kors"
+    },
+    {
+      "id": "319",
+      "arabicCityName": "تيسنت",
+      "frenshCityName": "Tissint"
+    },
+    {
+      "id": "320",
+      "arabicCityName": "فم زكيد",
+      "frenshCityName": "Foum Zguid"
+    },
+    {
+      "id": "321",
+      "arabicCityName": "قصر إيش",
+      "frenshCityName": "Ksar Ich"
+    },
+    {
+      "id": "322",
+      "arabicCityName": "إيمين ثلاث"
+    }
+  ]
+}

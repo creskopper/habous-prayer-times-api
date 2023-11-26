@@ -1,11 +1,12 @@
 import express from "express";
 
-import extractCities from "../lib/extractCities.js";
+import { JSONPreset } from "lowdb/node";
 
 const AvailableCitiesRoute = express.Router();
 
 AvailableCitiesRoute.get("/available-cities", async (req, res) => {
-	const cities = await extractCities();
+	const db = await JSONPreset("db.json", {});
+	const cities = db.data.cities;
 
 	if (cities.length === 0) {
 		return res.status(500).send({
