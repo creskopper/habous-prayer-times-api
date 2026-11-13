@@ -78,8 +78,9 @@ GET https://habous-prayer-times-api.onrender.com/api/v1/available-cities</pre
 		<div class="endpoint">
 			<h3>2. Prayer Times</h3>
 			<p>
-				This endpoint retrieves prayer times of the current Hijri month
-				for a specific city using the city's ID. If you don't know the
+				This endpoint retrieves prayer times of the current Gregorian month
+				for a specific city using the city's ID. Add <code>month=YYYY-MM</code>
+				for another published month, or <code>date=YYYY-MM-DD</code> for a single day. If you don't know the
 				ID for a specific city you can use the available-cities endpoint
 				to retreive all the cities available
 			</p>

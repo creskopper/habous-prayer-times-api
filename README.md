@@ -4,7 +4,7 @@ This API provides access to API Morocco's prayer times and information about ava
 
 ## Overview
 
-This API is built using **Node.js** and **Express.js** for handling HTTP requests and routing. The data is scraped from the Habous government website using **Cheerio**, a web scraping library for Node.js.
+This API is built using **Node.js** and **Express.js** for handling HTTP requests and routing. The data is read from the static data files the Habous government website publishes (`/data/horaires-YYYY-MM.js`, one per Gregorian month, and `/data/hijri.js` for the announced Hijri month starts). Responses are cached in memory for 6 hours, and the last good copy is served if the Habous website is unreachable.
 
 ## Live API
 
@@ -68,9 +68,13 @@ Feel free to explore and use these endpoints to fetch information about availabl
 
 ### 2. Prayer Times
 
--   **Description:** This endpoint retrieves prayer times of the current Hijri month for a specific city using the city's ID. If you don't know the ID for a specific city you can use the [/available-cities](#1-available-cities) route to retreive all the cities available
+-   **Description:** This endpoint retrieves prayer times of the current Gregorian month for a specific city using the city's ID. If you don't know the ID for a specific city you can use the [/available-cities](#1-available-cities) route to retreive all the cities available
 -   **Method:** `GET`
 -   **Endpoint URL:** `/api/v1/prayer-times?cityId={cityId}`
+-   **Optional parameters:**
+    -   `month=YYYY-MM` returns another month, if the Habous website has published it (otherwise `404`)
+    -   `date=YYYY-MM-DD` returns only that day
+-   **Notes:** each timing also has `date.iso` (`YYYY-MM-DD`); `date.hijri` is `null` for days outside the Hijri months announced by the ministry; `data.timezone` is the timezone the times are published in.
 -   **Example Request:** https://habous-prayer-times-api.onrender.com/api/v1/prayer-times?cityId=109
 -   **Example Response:**
 
@@ -117,6 +121,22 @@ Feel free to explore and use these endpoints to fetch information about availabl
 -   Clone the repository.
 -   Install dependencies using `npm install`.
 -   Start the server with `npm start` or `npm run dev`.
+
+## What's fixed (November 2026)
+
+The Habous website went into maintenance mode and removed the pages this API used to scrape (`/prieres/horaire_hijri_2.php` and `/prieres/horaire_hijri_fr.php` now return `404`), so every prayer-times request failed.
+
+-   **New data source:** prayer times are now read from the static data files the Habous website publishes (`/data/horaires-YYYY-MM.js` and `/data/hijri.js`) instead of the removed HTML pages. The files are parsed as data and never executed.
+-   **Server crash fixed:** a failed request to the Habous website used to throw outside the `try/catch` and stop the whole server. Upstream errors now return `502` with a message.
+-   **Correct Hijri year:** the Hijri date comes from the month starts announced by the ministry. It was hard-coded to `1445`.
+-   **Caching:** data is kept in memory for 6 hours, and the last good copy is served when the Habous website is unreachable. Before, every request made several requests to the Habous website.
+-   **Live city list:** `/available-cities` returns the cities currently published (190), with French names taken from `db.json`. The retired duplicate id `303` still works and maps to `94`.
+-   **New options:** `month=YYYY-MM` and `date=YYYY-MM-DD` on `/prayer-times`, plus `date.iso`, `city.id` and `timezone` in the response.
+-   **Input validation:** invalid `cityId`, `month` or `date` return `400` instead of an unhandled error.
+-   **Docs page path:** the static docs page was not served when the project folder path contained a space.
+-   **Dependencies:** `cheerio` and `lowdb` are no longer needed and were removed.
+
+**Behaviour change:** `/prayer-times` now returns a Gregorian month instead of a Hijri month, because that is how the Habous website publishes the data now.
 
 ## License
 
