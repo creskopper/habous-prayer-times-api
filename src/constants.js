@@ -1,19 +1,32 @@
-export const HABOUS_AR_PRAYER_TIMES_URL =
-	"https://habous.gov.ma/prieres/horaire_hijri_2.php";
-export const HABOUS_FR_PRAYER_TIMES_URL =
-	"https://www.habous.gov.ma/prieres/horaire_hijri_fr.php";
+// The Habous website now publishes prayer times as static data files
+// (one file per Gregorian month) instead of the old PHP pages.
+export const HABOUS_BASE_URL = "https://www.habous.gov.ma";
+export const HABOUS_MONTH_FILE = (year, month) =>
+	`/data/horaires-${year}-${String(month).padStart(2, "0")}.js`;
+export const HABOUS_HIJRI_FILE = "/data/hijri.js";
 
-export const GREGORIAN_MONTHS_ARABIC_TO_ENGLISH = {
-	يناير: { index: 0, name: "January" },
-	فبراير: { index: 1, name: "February" },
-	مارس: { index: 2, name: "March" },
-	أبريل: { index: 3, name: "April" },
-	ماي: { index: 4, name: "May" },
-	يونيو: { index: 5, name: "June" },
-	يوليوز: { index: 6, name: "July" },
-	غشت: { index: 7, name: "August" },
-	سبتمبر: { index: 8, name: "September" },
-	أكتوبر: { index: 9, name: "October" },
-	نوفمبر: { index: 10, name: "November" },
-	ديسمبر: { index: 11, name: "December" },
-};
+// How long fetched data is reused before asking the Habous website again.
+export const CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6 hours
+// How long a "this month is not published yet" answer is remembered.
+export const MISSING_TTL_MS = 10 * 60 * 1000; // 10 minutes
+export const REQUEST_TIMEOUT_MS = 30 * 1000;
+
+// City codes the Habous website retired because they were duplicates:
+// old code -> code that was kept.
+export const CITY_ID_ALIASES = { 303: 94 };
+
+// Used only if the names cannot be read from the Habous hijri file.
+export const HIJRI_MONTH_NAMES = [
+	"محرم",
+	"صفر",
+	"ربيع الأول",
+	"ربيع الآخر",
+	"جمادى الأولى",
+	"جمادى الآخرة",
+	"رجب",
+	"شعبان",
+	"رمضان",
+	"شوال",
+	"ذي القعدة",
+	"ذي الحجة",
+];
